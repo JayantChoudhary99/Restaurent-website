@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Niconne&family=Playwrite+BE+VLG:wght@100..400&family=Playwrite+DK+Loopet:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+BE+VLG:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Josefin+Sans:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    scroll-behavior: smooth;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.navbar-brand{
+    width: 6%;
+    display: flex;
+    align-content: center;
+}
+.span{
+    width: 100%;
+    font-family: "Niconne", cursive;
+    font-weight: 900 !important;
+    font-size: 2rem;
+    line-height: 35px;
+    
+}
+.back{
+    background-image: url(image/creative-italian-food-concept-with-space-middle.jpg);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+.back2{
+    background-image: url(image/delicious-lobster-gourmet-seafood.jpg);
+    background-size: 100% 100%;
+    
+}
+.back3{
+    background-image:linear-gradient(to bottom, rgba(86, 86, 90, 0.527), rgba(34, 37, 36, 0.73)), url(image/delicious-lobster-gourmet-seafood.jpg);
+    
+    background-size: 100%;
+    
+    
+}
+.overlay33{
+    
+    background-color: rgba(94, 86, 86, 0.71);
+    align-content: center;
+}
+.image_card{
+    height: 16rem;
+}
+.red{
+    color: #9e0205 !important;
+}
+.marron{
+
+      
+    background-color: #9e0205 !important;
+    
+    filter: contrast(0.99);
+}
+.list-unstyled  li:hover a {
+    margin-left: 10px;
+    color: rgb(25 135 89) !important; /* Change text color */
+}
+a{
+    -webkit-transition: 0.5s all ease;
+    transition: 0.5s all ease;
+}
+.pink{
+    background-color: #fff0d2;
+}
+.animation{
+    animation:Zoom-in-out 8s ease-in-out infinite ;
+}
+.size{
+    width: 450px;
+    height: 430px;
+}
+.form-select:focus {
+    border-color: #9e0205 !important;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgb(158 2 5 / 35%)!important;
+}
+.font{
+    font-family: "Josefin Sans",sans-serif;
+    font-weight: 500;
+}
+.font_title{
+    font-family: "Castoro Titling", serif;
+    font-weight: 600;
+    font-style: normal;
+}
+.background_pick{
+    background-image: url("image/images\ \(1\).jpeg");
+    background-size: 100% 100%;
+}
+.inbox{
+    width: 48%;
+}
+.line_green{
+    width: 10px;
+    height: 200px;
+    background-color:rgb(25 135 89) ;
+    border-radius: 10px;
+}
+.fontsize{
+    font-size: 0.655rem !important;
+}
+@keyframes Zoom-in-out  {
+    0%{
+        transform: scale(1,1);
+    }
+    50%{
+        transform: scale(0.9, 0.9);
+    }
+    100%{
+        transform: scale(1, 1);
+    }
+}
+
+

@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All dishes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"
+      integrity="sha512-HXXR0l2yMwHDrDyxJbrMD9eLvPe3z3qL3PPeozNTsiHJEENxx8DH2CxmV05iwG0dwoz5n4gQZQyYLUNt1Wdgfg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="set w-100 position-fixed top-0px z-3">
+      <nav class="navbar navbar-expand-lg pink">
+        <div class="container-fluid">
+          <div class="container">
+            <div class="flex">
+              <a class="navbar-brand" href="#">
+                <div class="span red">RT</div>
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="collapse navbar-collapse fw-medium d-flex justify-content-end"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav mb-2 mb-lg-0 gap-3">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link "
+                      aria-current="page "
+                      href="home.html"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle active red"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item text-success fw-medium" href="Alldishes.html"
+                          >North Indian</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-success fw-medium" href="#South"
+                          >South Indian</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-success fw-medium" href="#Fast">Fast Food</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-success fw-medium" href="#Sweeet">Sweets</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-success fw-medium" href="#Drink">Drink</a>
+                      </li>
+                      <li>
+                        <hr class="dropdown-divider" />
+                      </li>
+                      <li>
+                        <a class="dropdown-item text-success fw-medium" href="Alldishes.html"
+                          >All Dishes</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="About.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="contact.html">Contact us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="order.html">Order now</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-success" href="signin.html"
+                      >Sign in <i class="fa-solid fa-right-to-bracket"></i
+                    ></a>
+                  </li>
+                </ul>
+                <!-- <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                <button class="btn btn-outline-success" type="submit">
+                  Search
+                </button>
+              </form> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="container_fluid pt-5" >
+      <div class="container pt-5 " id="North">
+        <h2>North Indian</h2>
+        <hr class="red" />
+        <div class="bread" style="margin-bottom: 50px">
+          <h4 class="mb-3">Bread & Rice</h4>
+          <div id="carouselExampleAutoplaying" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="flex d-flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/tawa-roti.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-5">Tawa Roti</h5>
+                      <p class="card-text">Rs 8/pcs</p>
+                      <div
+                        class="cart_set w-100 d-flex justify-content-between"
+                      >
+                        <div
+                          class="cart_count d-flex w-25 justify-content-between rounded"
+                        >
+                          <button onclick="myfunsub()" class="btn border w-25">
+                            -
+                          </button>
+                          <p id="demo"></p>
+                          <button onclick="myfunadd()" class="btn border w-25">
+                            +
+                          </button>
+                        </div>
+                        <button class="btn btn-danger">Add to cart</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/tandoori-roti.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Tandoori roti</h5>
+                      <p class="card-text">Rs 10/pcs</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/Naan.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Naan</h5>
+                      <p class="card-text">Rs 25/pcs</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/rice.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Jeera rice</h5>
+                      <p class="card-text">Rs 90/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/hyderbad dum biryani.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Hyderabad dum briyani</h5>
+                      <p class="card-text">Rs 200/plate</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/chicken biryani.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Chicken Biryani</h5>
+                      <p class="card-text">Rs 200/plate</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/veg fried rice.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Veg fried rice</h5>
+                      <p class="card-text">Rs 110/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/gpf1azby7rwfk67wrwix.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Plain Rice</h5>
+                      <p class="card-text">Rs 70/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/b78904d50f6a6a9321ae61a015755890.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Pulao</h5>
+                      <p class="card-text">Rs 110/plate</p>
+                      <a href="#" class="btn btn-danger">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="bread">
+          <h4 class="mb-3">Sabji</h4>
+          <div
+            id="carouselExampleAutoplaying1"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/chana-mashala.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-5">Chana mashala</h5>
+                      <p class="card-text">Rs 100/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/gatte-ki-sabji.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Gatte ki sabji</h5>
+                      <p class="card-text">Rs 90/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/Shev-tamator-sabji.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Shev tamator</h5>
+                      <p class="card-text">Rs 110/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/butter-panner-mashala.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Butter paneer mashala</h5>
+                      <p class="card-text">Rs 140/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/chilli-paneer-mashala.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Chilli paneer mashala</h5>
+                      <p class="card-text">Rs 200/plate</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/kadai-paneer.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Kadhai paneer</h5>
+                      <p class="card-text">Rs 200/plate</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/paneer mashala.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Paneer mashala</h5>
+                      <p class="card-text">Rs 150/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/chilli-paneer-mashala.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Panner mashala</h5>
+                      <p class="card-text">Rs 150/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/Shev-tamator-sabji.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Shev tamator</h5>
+                      <p class="card-text">Rs 110/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying1"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying1"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-5" id="South">
+        <h2>South Indian</h2>
+        <hr class="red" />
+        <div class="bread" style="margin-bottom: 50px">
+          <h4 class="mb-3">Dosa & idli Shambhar</h4>
+          <div
+            id="carouselExampleAutoplaying2"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="flex d-flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/cheese mashala dose.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-5">Cheese mashala dosa</h5>
+                      <p class="card-text">Rs 80</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/onion mashala dosa.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Onion mashala dosa</h5>
+                      <p class="card-text">Rs 70</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/oats dosa.jpeg"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Oats dosa</h5>
+                      <p class="card-text">Rs 40</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/plain dosa.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Plain dosa</h5>
+                      <p class="card-text">Rs 50/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/idli shambhar.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Idli shambhar</h5>
+                      <p class="card-text">Rs 30/plate</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/vada-shambhar.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Vada shambhar</h5>
+                      <p class="card-text">Rs 40/plate</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/Mysore mashala dosa.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Mysore mashala dosa</h5>
+                      <p class="card-text">Rs 110/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/Golden Crisp Masala dosa.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Golden Crisp Masala dosa</h5>
+                      <p class="card-text">Rs 120/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/vada-shambhar.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Vada shambhar</h5>
+                      <p class="card-text">Rs 70/plate</p>
+                      <a href="#" class="btn btn-danger">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying2"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying2"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="bread">
+          <h4 class="mb-3">Famous Dish</h4>
+          <div
+            id="carouselExampleAutoplaying3"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/chicken biryani.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-5">Chicken biryani</h5>
+                      <p class="card-text">Rs 100/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/hyderbad dum biryani.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Hyderabadi dum biryani</h5>
+                      <p class="card-text">Rs 110/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/idli shambhar.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Idli shambhar</h5>
+                      <p class="card-text">Rs 40/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/Mysore mashala dosa.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Mysore mashala dosa</h5>
+                      <p class="card-text">Rs 140/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/294156779_1082267416022212_8006411537588067133_n-1_11zon-1660981126.jpg"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Chole Bhature</h5>
+                      <p class="card-text">Rs 80/plate</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/puri sabji.jpeg"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Puri Sabji</h5>
+                      <p class="card-text">Rs 50/plate</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/paneer mashala.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Paneer mashala</h5>
+                      <p class="card-text">Rs 150/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/chilli-paneer-mashala.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Panner mashala</h5>
+                      <p class="card-text">Rs 150/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/indian food/Shev-tamator-sabji.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Shev tamator</h5>
+                      <p class="card-text">Rs 110/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying3"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying3"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-5" id="Fast">
+        <h2>Fast food</h2>
+        <hr class="red" />
+        <div class="bread" style="margin-bottom: 50px">
+          <h4 class="mb-3"></h4>
+          <div
+            id="carouselExampleAutoplaying4"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="flex d-flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Fast food/Sandwich.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-5">Sandwich</h5>
+                      <p class="card-text">Rs 80</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Fast food/d4387d28-73ab-45b7-b424-61588863d158_9477217d-7c7a-4834-919a-b9ae7d7cf950.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Burger</h5>
+                      <p class="card-text">Rs 70</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Fast food/Spring roll.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Spring roll</h5>
+                      <p class="card-text">Rs 40</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Fast food/rolls.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Plain rolls</h5>
+                      <p class="card-text">Rs 50</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Fast food/Double chicken roll.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Chicken roll</h5>
+                      <p class="card-text">Rs 100</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Fast food/pizza.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Pizza</h5>
+                      <p class="card-text">Rs 150</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/Mysore mashala dosa.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Mysore mashala dosa</h5>
+                      <p class="card-text">Rs 110/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/Golden Crisp Masala dosa.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Golden Crisp Masala dosa</h5>
+                      <p class="card-text">Rs 120/plate</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/south food/vada-shambhar.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Vada shambhar</h5>
+                      <p class="card-text">Rs 70/plate</p>
+                      <a href="#" class="btn btn-danger">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying4"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying4"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-5" id="Sweeet">
+        <h2>Sweets</h2>
+        <hr class="red" />
+        <div class="bread" style="margin-bottom: 50px">
+          <h4 class="mb-3"></h4>
+          <div
+            id="carouselExampleAutoplaying5"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="flex d-flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Sweets/4ab09137a7f9bc62d9c861fab6b1be45.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-5">Cham Cham</h5>
+                      <p class="card-text">Rs 20</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Sweets/gilab-jamun.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Gulab jamun</h5>
+                      <p class="card-text">Rs 25</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Sweets/rashmalai.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">rashmalai</h5>
+                      <p class="card-text">Rs 40</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Sweets/churma laddo.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Churma laddoo</h5>
+                      <p class="card-text">Rs 15</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Sweets/motichoor laddo.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Motichoor laddo</h5>
+                      <p class="card-text">Rs 20</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Sweets/jalebi.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Jalebi</h5>
+                      <p class="card-text">Rs 40</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Sweets/Pakija.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Pakija</h5>
+                      <p class="card-text">Rs 400</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Sweets/Milk barfi.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Milk cake</h5>
+                      <p class="card-text">Rs 300</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/Sweets/Rashbhari.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Rashbhari</h5>
+                      <p class="card-text">Rs 240</p>
+                      <a href="#" class="btn btn-danger">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying5"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying5"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="container pt-5" id="Drink">
+        <h2>Drink</h2>
+        <hr class="red" />
+        <div class="bread" style="margin-bottom: 50px">
+          <h4 class="mb-3"></h4>
+          <div
+            id="carouselExampleAutoplaying6"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="flex d-flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/drink/ginger tea.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title fs-5">Ginger Tea</h5>
+                      <p class="card-text">Rs 20</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/drink/lemon tea.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Lemon Tea</h5>
+                      <p class="card-text">Rs 15</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/drink/f6af24125864ca5dcd44bd41b5fc9f47.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Pepsi</h5>
+                      <p class="card-text">Rs 50</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/drink/coca.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Coca cola</h5>
+                      <p class="card-text">Rs 45</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/drink/butter milk.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Butter Milk</h5>
+                      <p class="card-text">Rs 20</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/drink/choclate shake.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">choclate shake</h5>
+                      <p class="card-text">Rs 100</p>
+                      <a href="#" class="btn btn-danger">Add to Cart</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="flex" style="display: flex">
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/drink/kesar molk.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Kesar milk</h5>
+                      <p class="card-text">Rs 100</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/drink/mango shake.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Mango Shake</h5>
+                      <p class="card-text">Rs 300</p>
+                      <a href="#" class="btn btn-danger">Add to cart</a>
+                    </div>
+                  </div>
+                  <div class="card text-center" style="width: 25rem">
+                    <img
+                      src="image/drink/redbull.avif"
+                      class="card-img-top image_card"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Red bull</h5>
+                      <p class="card-text">Rs 200</p>
+                      <a href="#" class="btn btn-danger">Go somewhere</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying6"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying6"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container_fluid marron font">
+      <div class="container pt-5">
+        <div class="container text-center w-100 d-flex">
+          <!-- <div class="container text-center"> -->
+          <!-- <div class="row"> -->
+          <div class="col-3 text-start text-light p-1">
+            <h5 class="mb-4 fs-3">About us</h5>
+            <p class="fs-6 pe-4 lh-sm">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+              quis, voluptatum velit totam laboriosam atque quam consectetur
+              iste, repellat aliquid distinctio dicta voluptate asperiores id,
+              hic beatae dolor sunt esse ducimus excepturi! Omnis totam et a
+              necessitatibus voluptas doloremque odio quidem, dolores magnam
+              sequi non provident, nam id quae eum!
+            </p>
+          </div>
+          <div class="col-3 text-start text-light p-1">
+            <h5 class="mb-4 fs-3">Our Product</h5>
+            <ul class="list-unstyled text-start ps-1">
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-arrow-right-s-line"></i>Chole Bhatura</a
+                >
+              </li>
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-arrow-right-s-line"></i>Dosa</a
+                >
+              </li>
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-arrow-right-s-line"></i>Maggi</a
+                >
+              </li>
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-arrow-right-s-line"></i>Chicken Biryani</a
+                >
+              </li>
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-arrow-right-s-line"></i>Daal bati</a
+                >
+              </li>
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-arrow-right-s-line"></i>Samosa</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 text-start text-light p-1">
+            <h5 class="mb-4 fs-3">Quick Links</h5>
+            <ul class="list-unstyled text-start ps-1">
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-arrow-right-s-line"></i>Home</a
+                >
+              </li>
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-arrow-right-s-line"></i>Menu</a
+                >
+              </li>
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-arrow-right-s-line"></i>About us</a
+                >
+              </li>
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-arrow-right-s-line"></i>Contact us</a
+                >
+              </li>
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href="order.html"
+                  ><i class="ri-arrow-right-s-line"></i>Order now</a
+                >
+              </li>
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-arrow-right-s-line"></i>offer</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-3 text-start text-light p-1">
+            <h5 class="mb-4 fs-3">Contact us</h5>
+            <ul class="list-unstyled text-start ps-1 w-100">
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-phone-line"> </i>+91 840 987 8232</a
+                >
+              </li>
+              <li class="p-1">
+                <a class="text-decoration-none text-reset" href=""
+                  ><i class="ri-mail-line"> </i>choudharyjayant1999@gmail.com</a
+                >
+              </li>
+              <li class="p-1">
+                
+              </li>
+            </ul>
+          </div>
+
+          <!-- </div> -->
+
+          <!-- </div> -->
+        </div>
+        
+      </div>
+      <hr class="border border-success border-2 opacity-50 m-0">
+      <div class="container text-center p-2">
+        <p class="m-0 text-light font">All Rights Reserved By (Your restaurent name) @ 2024 Design By Jayant.</p>
+      </div>
+    </div>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
